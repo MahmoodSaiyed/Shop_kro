@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function ContactUs() {
   return (
-    <div className='conotainer'>
+    <div className='conotainer my-4'>
         {/* <!-- Modal Search Start --> */}
+        <h1 style={{color:'white'}}>Contact Us</h1>
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">

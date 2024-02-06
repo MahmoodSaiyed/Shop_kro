@@ -159,7 +159,7 @@ console.log(token)
           );
         })}
       </div>
-      <h1>Total Amount : {cartproduct.total_price_of_all_product}</h1>
+      <h1 style={{color:'white'}}>Total Amount : {cartproduct.total_price_of_all_product}</h1>
       <button className="btn btn-primary" onClick={makePayment}>
         Checkout
       </button>

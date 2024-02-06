@@ -32,7 +32,7 @@ product_recomondation_router.get("/get/:product_id",(req:Request,res:Response)=>
 
 
     let options:optionInterface={
-        scriptPath:"C:/Users/DESKTOP1/Desktop/GitLab/shop_kro",
+        scriptPath:"C:/Users/ABC/Desktop/GitProject/shop_kro/Server/shop_kro-main",
         args:input_data.map(String)
     };
     PythonShell.run('python.py', options).then(results=>{

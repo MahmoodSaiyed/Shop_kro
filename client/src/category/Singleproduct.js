@@ -8,7 +8,7 @@ function SingleProduct(props) {
 
   const [quantity, setquantity] = useState(1);
   const [similar, setSimilar] = useState(null);
-  // const [isLoadingSimilar, setIsLoadingSimilar] = useState(true);
+  const [isLoadingSimilar, setIsLoadingSimilar] = useState(true);
 
   const link =
     "http://localhost:9000";
@@ -43,31 +43,31 @@ console.log(token)
     fetchProduct();
   }, [id,token]);
 
-  // useEffect(() => {
-  //   const headers = {
-  //     Authorization: token,
-  //     method: "GET",
-  //     withCredentials: true,
-  //     "Content-Type": "application/json",
-  //     "ngrok-skip-browser-warning": true,
-  //   };
-  //   const showproduct = async () => {
-  //     try {
-  //       const response = await fetch(
-  //         `${link}/product_recomondation/get/${id}`,
-  //         {
-  //           headers,
-  //         }
-  //       );
-  //       const data = await response.json();
-  //       setSimilar(data);
-  //       setIsLoadingSimilar(false);
-  //     } catch (error) {
-  //       console.error("Error fetching secret data:", error);
-  //     }
-  //   };
-  //   showproduct();
-  // }, [id,token]);
+  useEffect(() => {
+    const headers = {
+      Authorization: token,
+      method: "GET",
+      withCredentials: true,
+      "Content-Type": "application/json",
+      "ngrok-skip-browser-warning": true,
+    };
+    const showproduct = async () => {
+      try {
+        const response = await fetch(
+          `${link}/product_recomondation/get/${id}`,
+          {
+            headers,
+          }
+        );
+        const data = await response.json();
+        setSimilar(data);
+        setIsLoadingSimilar(false);
+      } catch (error) {
+        console.error("Error fetching secret data:", error);
+      }
+    };
+    showproduct();
+  }, [id,token]);
 
   const addtocart = async () => {
     try {
@@ -95,9 +95,9 @@ console.log(token)
 
  
 
-  // if (!product) {
-  //   return <div> Loading...</div>;
-  // }
+  if (!product) {
+    return <div> Loading...</div>;
+  }
 
   return (
     <>
@@ -145,9 +145,9 @@ console.log(token)
           </p>
         </div>
       </div>
-      {/* <hr /> */}
-      {/* <h2>Similar Products</h2> */}
-      {/* <div className="container my-3">
+      <hr /> 
+      <h2 style={{color:'white'}}>Similar Products</h2>
+       <div className="container my-3">
         <div className="row">
           {isLoadingSimilar ? (
             <img
@@ -182,7 +182,7 @@ console.log(token)
                         {"total_amount  : "}
                         {e.total_amount_after_discount}
                       </h5>
-                      <button className="btn btn-primary" onClick={hehe}>
+                      <button className="btn btn-primary" >
                         <a href={`/singleproductpage/${e.product_id}`}>
                           View Product
                         </a>
@@ -194,7 +194,7 @@ console.log(token)
             })
           )}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
