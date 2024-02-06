@@ -1,0 +1,69 @@
+
+#singlecard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 330px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #d9a5ab;
+  right: 474px;
+}
+
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+#danger{
+  background-color:#f81500 
+}
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: -6rem 1rem;
+  vertical-align: middle;
+  text-align: -webkit-left;
+  -webkit-text-stroke-width: thick;
+  padding-right: 250px;
+}
+#singlecontainer{
+  background-color: white;
+  display: inline-flex;
+}
+.discount{
+  color: #f81500;
+}
+.h2tag{
+color: #000;
+font-size: 4rem;
+}
+.mrp{
+  right: 100px;
+}
+.qprice{
+  color: #000;
+}
+.helloimg{
+  height: 300px;
+  width: auto;
+}

@@ -1,0 +1,39 @@
+#addcontainer{
+    background-color: white;
+    color: black;
+outline-style:ridge}
+.area{
+    display: flex;
+    text-align: left;
+
+}
+.num{
+    text-align: left;
+}
+.city{
+    width: 65%;
+    text-align: left;
+
+}
+.name{
+    color: black;
+    text-align: left;
+}
+.btn-success{
+    margin-left: 1px;
+}
+#btn-dark {
+    position: relative;
+    margin-top: px;
+    margin-left: 0px;
+    right: 343px;
+    bottom: 52px;
+}
+
+#btn-danger{
+    position: relative;
+    margin-top: px;
+    margin-left: 0px;
+    right: 336px;
+    bottom: 52px;
+}

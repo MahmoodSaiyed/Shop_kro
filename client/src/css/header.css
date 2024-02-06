@@ -1,0 +1,15 @@
+.cart-container {
+  position: relative;
+}
+
+.cart-number {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 50%;
+}

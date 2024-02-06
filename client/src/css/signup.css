@@ -1,0 +1,81 @@
+
+.App {
+	text-align: center;
+	background-color: rgb(105, 58, 132);
+}
+
+.label {
+	display: block;
+	font-size: larger;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+}
+h4{
+  margin-left: 150px;
+}
+
+.input {
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  width: 200px;
+  height: 35px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+	border-radius: 5px;
+	font-size: larger;
+	display: block;
+	padding: 5px;
+	margin: 10px auto;
+}
+
+.messages {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.success {
+	display: block;
+	background-color: lightblue;
+	color: rgb(255, 255, 255);
+	width: fit-content;
+	height: 50px;
+	padding: 5px;
+}
+.a {
+  margin-top: 50px;
+  margin-left: 40%;
+  margin-right: 65%;
+  text-align: center;
+  background-color: #282c34;
+}
+.upfield{
+  border: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  width: 400px;
+  height: 530px;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  background-color: rgb(42, 42, 42);
+
+
+}
+h3{
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  
+}
+.btn-outline-dark {
+  color: #ffffff;
+  background-color: #a7a4a4;
+  background-image: none;
+  border-color: #e1e1e1;}
+  
