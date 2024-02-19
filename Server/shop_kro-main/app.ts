@@ -14,6 +14,7 @@ import { stripe_router } from "./stripe";
 import { success_router } from "./success";
 import { cancel_router } from "./cancel";
 import {product_recomondation_router} from "./product_recomondation";
+import { contact_us_router } from "./contact_us";
 
 // call express application.
 const app:Application=Express();
@@ -33,6 +34,7 @@ app.use("/stripe",middleware,stripe_router)
 app.use("/success",success_router)
 app.use("/cancel",cancel_router)
 app.use("/product_recomondation",middleware,product_recomondation_router)
+app.use("/contact_us",middleware,contact_us_router)
 
 //listen on 9000 port.
 app.listen(9000,()=>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import '../css/updateuser.css'
 
 export default function Updateuser() {
     const[updateuser,setupdateuser]=useState([])
@@ -59,12 +60,12 @@ export default function Updateuser() {
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
         <div class="card text-black" style= {{borderRadius:"25px;"}}>
-          <div class="card-body p-md-5">
+          <div class="card-body p-md-5" id='pd-5'>
             <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" id='col-xl-5'>
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Update Details</p>
-
+<hr />
                 <form class="mx-1 mx-md-4">
 
                   <div class="d-flex flex-row align-items-center mb-4">
@@ -98,6 +99,7 @@ export default function Updateuser() {
                       <input type="password" id="form3Example4cd" placeholder={number} class="form-control" onChange={(e) => setnumber(e.target.value)}/>
                     </div>
                   </div>
+                  <hr />
 
                  
 

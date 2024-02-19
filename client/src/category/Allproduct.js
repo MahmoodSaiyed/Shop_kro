@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Home from "../components/Home";
+import '../css/allproduct.css'
 
 export default function Allproduct(props) {
   const [secretData, setSecretData] = useState([]);

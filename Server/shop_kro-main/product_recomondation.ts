@@ -30,11 +30,13 @@ product_recomondation_router.get("/get/:product_id",(req:Request,res:Response)=>
     const user_id=res.locals.decode.user_id;
     var input_data:Number[]=[user_id,req.params.product_id];
 
-
+//in script path plz provide your own path in which your .py file is present
     let options:optionInterface={
         scriptPath:"C:/Users/ABC/Desktop/GitProject/shop_kro/Server/shop_kro-main",
         args:input_data.map(String)
     };
+
+    //Note: if yout whant to run python file.you need to install some liberaries in python (pandas,numpy,sklearn,mydwlonnector) install this using this command(pip install pandas scikit-learn numpy mysql-connector-python)
     PythonShell.run('python.py', options).then(results=>{
 
         for(let i=0;i<results.length-1;i++)

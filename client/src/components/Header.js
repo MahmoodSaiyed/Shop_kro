@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import img from "../logo/Screenshot (6)_LI.jpg";
+import img from "../logo/0e870b1f3382420c8ed3e137bb224dfe-removebg-preview.png";
 import userlogo from "../logo/MicrosoftTeams-image.png";
 import "../css/header.css";
 export default function Header() {
@@ -49,8 +49,7 @@ export default function Header() {
   return (
     <div>
       <nav
-        className="navbar navbar-expand-sm navbar-dark bg-dark"
-        style={{ backgroundColor: "black" }}
+        className="navbar navbar-expand-sm navbar-light bg-light"
       >
         <div className="container-fluid">
           <div></div>
@@ -110,7 +109,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/userdetails">
-                  <img
+                  <img 
                     src={userlogo}
                     alt="/
                       "

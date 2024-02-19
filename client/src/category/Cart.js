@@ -109,9 +109,11 @@ console.log(token)
 
    if (!cartproduct.product_list) {
     return (
-      <div>
+      <div className="my-4">
         {" "}
-        <h1>Your cart is empty</h1>
+        <h1 style={{ color:'white'
+        }}>Your cart is empty</h1><br />
+        <a href="/" className="btn btn-primary" style={{width:'120px'}}>Shop Now</a>
       </div>
     );
   }
@@ -159,7 +161,7 @@ console.log(token)
           );
         })}
       </div>
-      <h1 style={{color:'white'}}>Total Amount : {cartproduct.total_price_of_all_product}</h1>
+      <h1 style={{color:'black'}}>Total Amount : {cartproduct.total_price_of_all_product}</h1>
       <button className="btn btn-primary" onClick={makePayment}>
         Checkout
       </button>

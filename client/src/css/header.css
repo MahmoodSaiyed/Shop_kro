@@ -9,7 +9,14 @@
   color: red;
   font-size: 12px;
   font-weight: bold;
-  background-color: #fff;
+  background-color:none;
   padding: 2px 5px;
   border-radius: 50%;
+}
+.navbar-brand{
+  border: none;
+}
+.all-card {
+  height: 200px;
+  width: 200px;
 }

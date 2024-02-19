@@ -19,11 +19,12 @@
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #3c00ff;
   text-align: center;
   cursor: pointer;
   width: 70%;
   font-size: 18px;
+  /* color: blue; */
 }
 
 .card button:hover {
@@ -66,4 +67,7 @@ font-size: 4rem;
 .helloimg{
   height: 300px;
   width: auto;
+}
+a{
+  color: white;
 }

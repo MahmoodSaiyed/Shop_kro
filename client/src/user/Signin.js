@@ -35,7 +35,7 @@ console.log(gettoken)
       console.log(data);
       settoken(data)
       localStorage.setItem('token',data.token);
-      window.location.href='/sports'
+      window.location.href='/'
     })
 	
 
