@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import img from "../logo/0e870b1f3382420c8ed3e137bb224dfe-removebg-preview.png";
 import userlogo from "../logo/MicrosoftTeams-image.png";
 import "../css/header.css";
+import { IconButton } from '@material-ui/core';
+import Avatar from '@material-ui/core/Avatar'
+import { MDBIcon } from "react-icons/fa6";
 export default function Header() {
   const [cartnumber, setcartnumber] = useState([]);
   const [show, setshow] = useState();
@@ -109,11 +112,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/userdetails">
-                  <img 
-                    src={userlogo}
-                    alt="/
-                      "
-                  />
+    <Avatar/>
                 </a>
               </li>
 

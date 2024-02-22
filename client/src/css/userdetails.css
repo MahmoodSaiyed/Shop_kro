@@ -45,10 +45,11 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #000000;
+  border: 1px solid #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  color: white;
 }
 
 .user-detail {
@@ -79,8 +80,8 @@
 }
 
 .detail-value {
-  color: #333;
-  -webkit-text-stroke: medium;
+  color: #ffffff;
+  
 }
 
 .btn-success {

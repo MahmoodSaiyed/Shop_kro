@@ -64,7 +64,7 @@ export default function Updateuser() {
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" id='col-xl-5'>
 
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Update Details</p>
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style={{color:"black"}}>Update Details</p>
 <hr />
                 <form class="mx-1 mx-md-4">
 
@@ -72,7 +72,7 @@ export default function Updateuser() {
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" >Your Name</label>
-                      <input type="text" placeholder={name} class="form-control" onChange={(e) => setusername(e.target.value)}/>
+                      <input type="text" placeholder="user-name" class="form-control" onChange={(e) => setusername(e.target.value)}/>
                     </div>
                   </div>
 
@@ -80,7 +80,7 @@ export default function Updateuser() {
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example3c">Your Email</label>
-                      <input type="email" id="form3Example3c" placeholder={e} class="form-control" onChange={(e) => setemail(e.target.value)} />
+                      <input type="email" id="form3Example3c" placeholder='E-mail' class="form-control" onChange={(e) => setemail(e.target.value)} />
                     </div>
                   </div>
 
@@ -88,7 +88,7 @@ export default function Updateuser() {
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example4c">Password</label>
-                      <input type="text" id="form3Example4c" placeholder={pass} class="form-control" onChange={(e) => setpassword(e.target.value)} />
+                      <input type="text" id="form3Example4c" placeholder="password" class="form-control" onChange={(e) => setpassword(e.target.value)} />
                     </div>
                   </div>
 
@@ -96,7 +96,7 @@ export default function Updateuser() {
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example4cd">Mobile No.</label>
-                      <input type="password" id="form3Example4cd" placeholder={number} class="form-control" onChange={(e) => setnumber(e.target.value)}/>
+                      <input type="password" id="form3Example4cd" placeholder="Number" class="form-control" onChange={(e) => setnumber(e.target.value)}/>
                     </div>
                   </div>
                   <hr />

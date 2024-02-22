@@ -48,7 +48,7 @@ export default function Userdetails() {
 
 <div className="user-detail-container">
   
-<h2>My Info</h2>
+<h2>User Info</h2>
 <hr />
 <div className="user-detail">
   <div className='childuser'>  <img className='userimage' src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png" alt="/" /> </div>

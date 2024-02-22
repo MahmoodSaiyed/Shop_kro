@@ -1,6 +1,10 @@
 .cart-container {
   position: relative;
 }
+.cart-container.nav-item {
+  position: relative;
+  top: 12px;
+}
 
 .cart-number {
   position: absolute;
@@ -15,8 +19,4 @@
 }
 .navbar-brand{
   border: none;
-}
-.all-card {
-  height: 200px;
-  width: 200px;
 }

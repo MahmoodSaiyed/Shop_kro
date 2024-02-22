@@ -28,7 +28,6 @@ export const middleware=async(req:Request,res:Response,next:NextFunction)=>{
 
 
         const decodedToken= jwt.verify(token,"thisismysecret");
-        console.log(decodedToken)
         res.locals.decode=decodedToken ;
         return next()
 
@@ -54,7 +53,7 @@ authRouter.post("/post/signin",(req:Request,res:Response)=>
         for (const item of result)
         {
             if(body.email==item.email && body.password==item.password)
-            {   var token=jwt.sign({user_id:item.user_id,role:"admin"},"thisismysecret",{expiresIn:"160h"})
+            {   var token=jwt.sign({user_id:item.user_id,role:"admin"},"thisismysecret",{expiresIn:"1600000h"})
                 return res.status(200).send({token:"Bearer "+token})
             }
             continue;

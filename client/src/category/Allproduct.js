@@ -34,14 +34,16 @@ export default function Allproduct(props) {
     };
     fetchdata();
 
-    document.title = `${capitalizeFirstLetter(props.heading)}`;
   }, [props.heading,props.category,token]);
+  const title = `${capitalizeFirstLetter(props.heading)}`;
   
 
 
 
   return (
     <div className="container my-3">
+    <h2>{title}</h2>
+    <hr />
       <div className="row">
         {secretData.map((element) => {
           return (
